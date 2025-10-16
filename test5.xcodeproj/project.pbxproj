@@ -399,6 +399,9 @@
 				DEVELOPMENT_TEAM = YL58PPNR2T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "此应用需要访问相机来拍摄照片进行AI图像分割和风格迁移";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "此应用需要访问相册来保存处理后的图片";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "此应用需要访问相册来选择照片进行AI图像分割和风格迁移";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +431,9 @@
 				DEVELOPMENT_TEAM = YL58PPNR2T;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "此应用需要访问相机来拍摄照片进行AI图像分割和风格迁移";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "此应用需要访问相册来保存处理后的图片";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "此应用需要访问相册来选择照片进行AI图像分割和风格迁移";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
