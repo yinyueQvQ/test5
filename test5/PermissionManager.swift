@@ -9,11 +9,21 @@ import Foundation
 import AVFoundation
 import Photos
 import UIKit
+import UserNotifications
+
+// 统一的权限状态枚举
+enum PermissionStatus {
+    case authorized
+    case denied
+    case restricted
+    case notDetermined
+}
 
 class PermissionManager: ObservableObject {
     
     @Published var cameraPermissionStatus: AVAuthorizationStatus = .notDetermined
     @Published var photoLibraryPermissionStatus: PHAuthorizationStatus = .notDetermined
+    @Published var notificationPermissionStatus: UNAuthorizationStatus = .notDetermined
     
     init() {
         updatePermissionStatus()
@@ -27,6 +37,14 @@ class PermissionManager: ObservableObject {
             photoLibraryPermissionStatus = PHPhotoLibrary.authorizationStatus(for: .readWrite)
         } else {
             photoLibraryPermissionStatus = PHPhotoLibrary.authorizationStatus()
+        }
+        
+        // 更新通知权限状态
+        Task {
+            let settings = await UNUserNotificationCenter.current().notificationSettings()
+            await MainActor.run {
+                notificationPermissionStatus = settings.authorizationStatus
+            }
         }
     }
     
@@ -121,6 +139,27 @@ class PermissionManager: ObservableObject {
         window.rootViewController?.present(alert, animated: true)
     }
     
+    // MARK: - Notification Permission
+    
+    func requestNotificationPermission() async -> Bool {
+        let center = UNUserNotificationCenter.current()
+        
+        do {
+            let granted = try await center.requestAuthorization(options: [.alert, .sound, .badge])
+            await MainActor.run {
+                Task {
+                    let settings = await center.notificationSettings()
+                    await MainActor.run {
+                        notificationPermissionStatus = settings.authorizationStatus
+                    }
+                }
+            }
+            return granted
+        } catch {
+            return false
+        }
+    }
+    
     // MARK: - Convenience Methods
     
     var canUseCamera: Bool {
@@ -129,5 +168,50 @@ class PermissionManager: ObservableObject {
     
     var canAccessPhotoLibrary: Bool {
         return photoLibraryPermissionStatus == .authorized || photoLibraryPermissionStatus == .limited
+    }
+    
+    // MARK: - Unified Permission Status
+    
+    var cameraStatus: PermissionStatus {
+        switch cameraPermissionStatus {
+        case .authorized:
+            return .authorized
+        case .denied:
+            return .denied
+        case .restricted:
+            return .restricted
+        case .notDetermined:
+            return .notDetermined
+        @unknown default:
+            return .notDetermined
+        }
+    }
+    
+    var photoLibraryStatus: PermissionStatus {
+        switch photoLibraryPermissionStatus {
+        case .authorized, .limited:
+            return .authorized
+        case .denied:
+            return .denied
+        case .restricted:
+            return .restricted
+        case .notDetermined:
+            return .notDetermined
+        @unknown default:
+            return .notDetermined
+        }
+    }
+    
+    var notificationStatus: PermissionStatus {
+        switch notificationPermissionStatus {
+        case .authorized, .provisional, .ephemeral:
+            return .authorized
+        case .denied:
+            return .denied
+        case .notDetermined:
+            return .notDetermined
+        @unknown default:
+            return .notDetermined
+        }
     }
 }

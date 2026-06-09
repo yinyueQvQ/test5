@@ -19,6 +19,9 @@ class StyleTransferManager: ObservableObject {
     // 保存输入图像用于合成
     private var inputImageForCompositing: UIImage?
     
+    // 背包管理器引用
+    var inventoryManager: InventoryManager?
+    
     init() {
         loadModel()
     }
@@ -385,7 +388,21 @@ class StyleTransferManager: ObservableObject {
         }
         
         print("✅ [DEBUG] 透明背景合成完成")
-        return UIImage(cgImage: finalCGImage)
+        
+        let finalImage = UIImage(cgImage: finalCGImage)
+        
+        // 自动保存到背包（BackpackManager）
+        let backpack = BackpackManager.shared
+        let timestamp = Date().formatted(date: .numeric, time: .shortened)
+        backpack.addItem(name: "素材 \(timestamp)", image: finalImage)
+        print("📦 [DEBUG] 素材已自动保存到背包")
+        
+        // 也保存到旧的 inventoryManager（兼容性）
+        if let inventory = inventoryManager {
+            inventory.addItem(finalImage)
+        }
+        
+        return finalImage
     }
     
     func reset() {

@@ -399,4 +399,16 @@ class ImageSegmentationManager: ObservableObject {
         print("✅ [DEBUG] 抠图创建成功！")
         return UIImage(cgImage: cutoutCGImage)
     }
+    
+    // 重置所有状态
+    func reset() {
+        originalImage = nil
+        segmentationResult = nil
+        highlightedSegmentationResult = nil
+        segmentedRegions.removeAll()
+        selectedRegions.removeAll()
+        realSegmentationData.removeAll()
+        segmentationImageSize = .zero
+        isLoading = false
+    }
 }

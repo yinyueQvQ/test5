@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		3DF1EAA62E9F741D00FB317D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DF1EA8D2E9F741D00FB317D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DF1EA942E9F741D00FB317D;
+			remoteInfo = test5;
+		};
+		3DF1EAB02E9F741D00FB317D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DF1EA8D2E9F741D00FB317D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DF1EA942E9F741D00FB317D;
+			remoteInfo = test5;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3DF1EA952E9F741D00FB317D /* innoforge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = innoforge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF1EAA52E9F741D00FB317D /* innoforgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = innoforgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF1EAAF2E9F741D00FB317D /* innoforgeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = innoforgeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3D7BC9B52EAD865300FCB8E0 /* Exceptions for "test5" folder in "innoforge" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 3DF1EA942E9F741D00FB317D /* innoforge */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3DF1EA972E9F741D00FB317D /* test5 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3D7BC9B52EAD865300FCB8E0 /* Exceptions for "test5" folder in "innoforge" target */,
+			);
+			path = test5;
+			sourceTree = "<group>";
+		};
+		3DF1EAA82E9F741D00FB317D /* test5Tests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = test5Tests;
+			sourceTree = "<group>";
+		};
+		3DF1EAB22E9F741D00FB317D /* test5UITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = test5UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DF1EA922E9F741D00FB317D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF1EAA22E9F741D00FB317D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF1EAAC2E9F741D00FB317D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DF1EA8C2E9F741D00FB317D = {
+			isa = PBXGroup;
+			children = (
+				3DF1EA972E9F741D00FB317D /* test5 */,
+				3DF1EAA82E9F741D00FB317D /* test5Tests */,
+				3DF1EAB22E9F741D00FB317D /* test5UITests */,
+				3DF1EA962E9F741D00FB317D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DF1EA962E9F741D00FB317D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DF1EA952E9F741D00FB317D /* innoforge.app */,
+				3DF1EAA52E9F741D00FB317D /* innoforgeTests.xctest */,
+				3DF1EAAF2E9F741D00FB317D /* innoforgeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DF1EA942E9F741D00FB317D /* innoforge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF1EAB92E9F741D00FB317D /* Build configuration list for PBXNativeTarget "innoforge" */;
+			buildPhases = (
+				3DF1EA912E9F741D00FB317D /* Sources */,
+				3DF1EA922E9F741D00FB317D /* Frameworks */,
+				3DF1EA932E9F741D00FB317D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3DF1EA972E9F741D00FB317D /* test5 */,
+			);
+			name = innoforge;
+			packageProductDependencies = (
+			);
+			productName = test5;
+			productReference = 3DF1EA952E9F741D00FB317D /* innoforge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DF1EAA42E9F741D00FB317D /* innoforgeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF1EABC2E9F741D00FB317D /* Build configuration list for PBXNativeTarget "innoforgeTests" */;
+			buildPhases = (
+				3DF1EAA12E9F741D00FB317D /* Sources */,
+				3DF1EAA22E9F741D00FB317D /* Frameworks */,
+				3DF1EAA32E9F741D00FB317D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DF1EAA72E9F741D00FB317D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3DF1EAA82E9F741D00FB317D /* test5Tests */,
+			);
+			name = innoforgeTests;
+			packageProductDependencies = (
+			);
+			productName = test5Tests;
+			productReference = 3DF1EAA52E9F741D00FB317D /* innoforgeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DF1EAAE2E9F741D00FB317D /* innoforgeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DF1EABF2E9F741D00FB317D /* Build configuration list for PBXNativeTarget "innoforgeUITests" */;
+			buildPhases = (
+				3DF1EAAB2E9F741D00FB317D /* Sources */,
+				3DF1EAAC2E9F741D00FB317D /* Frameworks */,
+				3DF1EAAD2E9F741D00FB317D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DF1EAB12E9F741D00FB317D /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				3DF1EAB22E9F741D00FB317D /* test5UITests */,
+			);
+			name = innoforgeUITests;
+			packageProductDependencies = (
+			);
+			productName = test5UITests;
+			productReference = 3DF1EAAF2E9F741D00FB317D /* innoforgeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DF1EA8D2E9F741D00FB317D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1610;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					3DF1EA942E9F741D00FB317D = {
+						CreatedOnToolsVersion = 16.1;
+					};
+					3DF1EAA42E9F741D00FB317D = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 3DF1EA942E9F741D00FB317D;
+					};
+					3DF1EAAE2E9F741D00FB317D = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 3DF1EA942E9F741D00FB317D;
+					};
+				};
+			};
+			buildConfigurationList = 3DF1EA902E9F741D00FB317D /* Build configuration list for PBXProject "innoforge" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DF1EA8C2E9F741D00FB317D;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3DF1EA962E9F741D00FB317D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DF1EA942E9F741D00FB317D /* innoforge */,
+				3DF1EAA42E9F741D00FB317D /* innoforgeTests */,
+				3DF1EAAE2E9F741D00FB317D /* innoforgeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DF1EA932E9F741D00FB317D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF1EAA32E9F741D00FB317D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF1EAAD2E9F741D00FB317D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DF1EA912E9F741D00FB317D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF1EAA12E9F741D00FB317D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DF1EAAB2E9F741D00FB317D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DF1EAA72E9F741D00FB317D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DF1EA942E9F741D00FB317D /* innoforge */;
+			targetProxy = 3DF1EAA62E9F741D00FB317D /* PBXContainerItemProxy */;
+		};
+		3DF1EAB12E9F741D00FB317D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DF1EA942E9F741D00FB317D /* innoforge */;
+			targetProxy = 3DF1EAB02E9F741D00FB317D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3DF1EAB72E9F741D00FB317D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = YL58PPNR2T;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DF1EAB82E9F741D00FB317D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YL58PPNR2T;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DF1EABA2E9F741D00FB317D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"test5/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = test5/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "此应用需要访问相机来拍摄照片进行AI图像分割和风格迁移";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "此应用需要访问相册来保存处理后的图片";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "此应用需要访问相册来选择照片进行AI图像分割和风格迁移";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = novaforge.test5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DF1EABB2E9F741D00FB317D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"test5/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = test5/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "此应用需要访问相机来拍摄照片进行AI图像分割和风格迁移";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "此应用需要访问相册来保存处理后的图片";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "此应用需要访问相册来选择照片进行AI图像分割和风格迁移";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = novaforge.test5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DF1EABD2E9F741D00FB317D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = novaforge.test5Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/innoforge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/innoforge";
+			};
+			name = Debug;
+		};
+		3DF1EABE2E9F741D00FB317D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = novaforge.test5Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/innoforge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/innoforge";
+			};
+			name = Release;
+		};
+		3DF1EAC02E9F741D00FB317D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = novaforge.test5UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = test5;
+			};
+			name = Debug;
+		};
+		3DF1EAC12E9F741D00FB317D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = novaforge.test5UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = test5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DF1EA902E9F741D00FB317D /* Build configuration list for PBXProject "innoforge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF1EAB72E9F741D00FB317D /* Debug */,
+				3DF1EAB82E9F741D00FB317D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DF1EAB92E9F741D00FB317D /* Build configuration list for PBXNativeTarget "innoforge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF1EABA2E9F741D00FB317D /* Debug */,
+				3DF1EABB2E9F741D00FB317D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DF1EABC2E9F741D00FB317D /* Build configuration list for PBXNativeTarget "innoforgeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF1EABD2E9F741D00FB317D /* Debug */,
+				3DF1EABE2E9F741D00FB317D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DF1EABF2E9F741D00FB317D /* Build configuration list for PBXNativeTarget "innoforgeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DF1EAC02E9F741D00FB317D /* Debug */,
+				3DF1EAC12E9F741D00FB317D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DF1EA8D2E9F741D00FB317D /* Project object */;
+}
