@@ -11,12 +11,11 @@ class StableDiffusionManager: ObservableObject {
     
     // 🌐 服务器地址配置
     // 选项1：局域网访问（开发用，速度快）
-    private let localEndpoint = "http://192.168.31.11:8000/generate"
+    private let localEndpoint = "http://127.0.0.1:8000/generate"  // 改为你的局域网 IP
     
-    // 选项2：公网访问（使用ngrok）
-    // ⚠️ 每次启动 ngrok 都需要更新这个地址！
-    // 运行: ngrok http 8000，然后复制 Forwarding 地址，记得加 /generate
-    private let publicEndpoint = "https://percurrent-sub-lavette.ngrok-free.dev/generate"
+    // 选项2：公网访问（使用 ngrok）
+    // 运行: ngrok http 8000，复制 Forwarding 地址并加上 /generate
+    private let publicEndpoint = "https://YOUR-NGROK-URL.ngrok-free.app/generate"
     
     // 🔧 切换这里来选择使用哪个地址
     private var apiEndpoint: String {

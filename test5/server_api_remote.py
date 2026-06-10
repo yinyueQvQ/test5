@@ -39,10 +39,10 @@ CORS(app)  # 允许跨域请求
 # ============ 配置区域 ============
 # 远程服务器配置（根据 README.md）
 SERVER_CONFIG = {
-    "host": "connect.westc.gpuhub.com",
-    "port": 42742,
+    "host": "your-server-host",
+    "port": 22,
     "username": "root",
-    "password": "hHI9fR1QZ8g/"
+    "password": "YOUR_PASSWORD"
 }
 
 # 服务器上的 SD 项目路径

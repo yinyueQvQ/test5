@@ -499,10 +499,10 @@ def main():
     # ============ 配置区域 ============
     # 服务器配置
     SERVER_CONFIG = {
-        "host": "connect.westc.gpuhub.com",
-        "port": 42742,
+        "host": "your-server-host",
+        "port": 22,
         "username": "root",
-        "password": "hHI9fR1QZ8g/"
+        "password": "YOUR_PASSWORD"  # 请勿提交真实密码，使用环境变量或本地 config
     }
     
     # 项目路径配置

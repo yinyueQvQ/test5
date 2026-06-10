@@ -1,0 +1,68 @@
+# ===== macOS / Xcode =====
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Xcode user data & build artifacts
+xcuserdata/
+*.xcuserstate
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+
+# ===== Python =====
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+*.log
+
+# ===== 敏感配置（勿提交） =====
+config.local.py
+config.local.json
+.env
+.env.*
+secrets/
+*.pem
+*.key
+
+# ===== 生成产物 / 缓存 =====
+innoforge-stablediff/generated_images/
+test5/api_outputs/
+deploy_package/
+
+# ===== 大体积 ML 模型（见 docs/MODEL_SETUP.md） =====
+# IS-Net 约 168MB，超过 GitHub 单文件 100MB 限制，需 Git LFS 或手动下载
+test5/is-net-genral-use.mlmodel
+test5/is-net-genral-use.mlmodelc/
+
+# ===== 编辑器 =====
+.vscode/
+.idea/
+
+# ===== 内部调试文档（含服务器 IP/密码，勿公开） =====
+Termius配置指南.md
+紧急排查-暂无图像.md
+MUST_READ_看这里.md
+SERVER_STATUS.md
+更新ngrok地址.md
+紧急回滚说明.md
+调试指南-真实合成.md
+【重要】测试真实合成.md
+快速测试-优化后.md
+test试步骤-无线模式.md
+XCODE_CONSOLE_GUIDE.png.txt
+
+# ===== 杂项 =====
+h

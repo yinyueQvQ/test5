@@ -72,10 +72,10 @@ python test_connection.py
 ```python
 # 服务器配置（已填好，可根据需要修改）
 SERVER_CONFIG = {
-    "host": "connect.westc.gpuhub.com",
-    "port": 42742,
+    "host": "your-server-host",
+    "port": 22,
     "username": "root",
-    "password": "hHI9fR1QZ8g/"
+    "password": "YOUR_PASSWORD"
 }
 
 # ⚠️ 修改为你的实际路径
@@ -122,10 +122,10 @@ from client_sd_remote import SDRemoteClient
 
 # 创建客户端
 client = SDRemoteClient(
-    host="connect.westc.gpuhub.com",
-    port=42742,
+    host="your-server-host",
+    port=22,
     username="root",
-    password="hHI9fR1QZ8g/"
+    password="YOUR_PASSWORD"
 )
 
 # 连接
@@ -215,7 +215,7 @@ if result["success"]:
 **解决方法:**
 ```bash
 # 先手动测试 SSH 连接
-ssh -p 42742 root@connect.westc.gpuhub.com
+ssh -p 22 root@your-server-host
 
 # 如果能连接，说明配置正确
 # 如果不能连接，检查：
@@ -234,7 +234,7 @@ ssh -p 42742 root@connect.westc.gpuhub.com
 python test_connection.py
 
 # 或者 SSH 登录手动查找
-ssh -p 42742 root@connect.westc.gpuhub.com
+ssh -p 22 root@your-server-host
 ls -la ~
 find ~ -name "stablediffusion" -o -name "stable-diffusion"
 
@@ -248,7 +248,7 @@ find ~ -name "stablediffusion" -o -name "stable-diffusion"
 **解决方法:**
 ```bash
 # SSH 登录查看模型目录
-ssh -p 42742 root@connect.westc.gpuhub.com
+ssh -p 22 root@your-server-host
 ls /root/stablediffusion/ckpt/
 
 # 复制实际的模型文件名，修改脚本中的 CHECKPOINT_PATH
@@ -274,7 +274,7 @@ ls /root/stablediffusion/ckpt/
 **解决方法:**
 ```bash
 # SSH 登录检查输出目录
-ssh -p 42742 root@connect.westc.gpuhub.com
+ssh -p 22 root@your-server-host
 ls /root/stablediffusion/outputs/samples/
 
 # 如果目录为空，说明生成失败
@@ -287,8 +287,8 @@ ls /root/stablediffusion/outputs/samples/
 
 | 参数 | 说明 | 示例 |
 |------|------|------|
-| `host` | 服务器地址 | `connect.westc.gpuhub.com` |
-| `port` | SSH 端口 | `42742` |
+| `host` | 服务器地址 | `your-server-host` |
+| `port` | SSH 端口 | `22` |
 | `username` | SSH 用户名 | `root` |
 | `password` | SSH 密码 | `your_password` |
 

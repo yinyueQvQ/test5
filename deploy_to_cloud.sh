@@ -8,8 +8,8 @@ echo "🚀 开始部署 Flask API 到云服务器..."
 echo ""
 
 # 服务器配置
-SERVER_HOST="connect.westc.gpuhub.com"
-SERVER_PORT="42742"
+SERVER_HOST="${SERVER_HOST:-your-server-host}"
+SERVER_PORT="${SERVER_PORT:-22}"
 SERVER_USER="root"
 DEPLOY_DIR="/root/sd-flask-api"
 
@@ -106,7 +106,7 @@ echo ""
 
 # 上传文件到服务器
 echo "📤 上传文件到服务器..."
-echo "⚠️  需要输入服务器密码: hHI9fR1QZ8g/"
+echo "⚠️  需要输入服务器密码（请勿将密码写入脚本或提交到 Git）"
 echo ""
 
 # 创建目录并上传文件
@@ -127,7 +127,7 @@ echo "📋 下一步操作："
 echo ""
 echo "1️⃣  SSH连接到服务器："
 echo "   ssh -p ${SERVER_PORT} ${SERVER_USER}@${SERVER_HOST}"
-echo "   密码: hHI9fR1QZ8g/"
+echo "   密码: （运行时手动输入）"
 echo ""
 echo "2️⃣  在服务器上执行安装："
 echo "   cd ${DEPLOY_DIR}"

@@ -16,10 +16,10 @@ def test_ssh_connection():
     print("=" * 60)
     
     # 服务器配置
-    host = "connect.westc.gpuhub.com"
-    port = 42742
+    host = "your-server-host"
+    port = 22
     username = "root"
-    password = "hHI9fR1QZ8g/"
+    password = "YOUR_PASSWORD"
     
     print(f"\n服务器地址: {host}")
     print(f"端口: {port}")
